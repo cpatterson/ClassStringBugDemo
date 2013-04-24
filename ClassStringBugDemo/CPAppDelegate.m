@@ -20,7 +20,9 @@
 	// The following line causes clang to "hang" (spin forever) trying to compile this file,
 	// when it should cause some kind of "type mismatch" compile error.
 	// The correct way to write this line is:
-	// if ([NSStringFromClass([application class]) isEqual:@"UIApplication"])
+	// if (![NSStringFromClass([application class]) isEqual:@"UIApplication"])
+	// or better yet:
+	// if ([application class] != [UIApplication class])
 	if ([application class] != @"UIApplication")
 		NSLog(@"App class is not UIApplication");
 	
