@@ -8,5 +8,8 @@ finish compiling the offending file and hangs, appearing to take forever to comp
 
 Clang should report some kind of "type mismatch" error and move on.
 
+This demo project reproduces the bug. The offending line of code is in the AppDelegate.m file. Otherwise the project
+is a stock Apple iOS "Empty" app template.
+
 Radar filed under:
 http://openradar.appspot.com/radar?id=2972401
