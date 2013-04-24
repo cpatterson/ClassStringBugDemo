@@ -7,3 +7,6 @@ When you (stupidly) try to compare a Class object to an NSString literal with th
 finish compiling the offending file and hangs, appearing to take forever to compile the file.
 
 Clang should report some kind of "type mismatch" error and move on.
+
+Radar filed under:
+http://openradar.appspot.com/radar?id=2972401
